@@ -33,7 +33,7 @@ public class Geography extends JsonArray{
     }
     
     public JsonArray toJson() {
-        return this;
+        return new JsonArray().addAll(this);
     }
     
     public String toPostgis() {

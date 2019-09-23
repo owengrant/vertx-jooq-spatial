@@ -57,7 +57,8 @@ public class GeographyFactory {
     }
     
     private Type type(Geometry geo) {
-        var type = geo.toString().split(";")[1];
+        var geoString = geo.toString();
+        var type = geoString.contains(";") ? geoString.split(";")[1] : geoString;
         return Type.valueOf(type.substring(0, type.indexOf("(")));
     }
     

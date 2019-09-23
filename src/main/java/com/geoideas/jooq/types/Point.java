@@ -20,11 +20,6 @@ public class Point extends Geography{
     }
     
     @Override
-    public JsonArray toJson() {
-        return this;
-    }
-    
-    @Override
     public Point fromJson(JsonArray arr) {
         add(arr.getDouble(0)).add(arr.getDouble(1));
         return this;

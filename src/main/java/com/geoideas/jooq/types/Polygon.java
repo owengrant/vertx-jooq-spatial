@@ -43,11 +43,6 @@ public class Polygon extends Geography{
     }
 
     @Override
-    public JsonArray toJson() {
-        return this;
-    }
-
-    @Override
     public String toPostgis() {
         var join = new StringJoiner(",");
         geog.stream()
