@@ -3,7 +3,6 @@ package com.geoideas.jooq.converters;
 import org.jooq.Converter;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class DateConverter implements Converter<LocalDate, String> {
     @Override
