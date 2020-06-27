@@ -39,13 +39,18 @@
     <dependency>
         <groupId>org.jooq</groupId>
         <artifactId>jooq</artifactId>
-        <version>3.12.1</version>
+        <version>3.13.2</version>
         <type>jar</type>
     </dependency>
     <dependency>
         <groupId>io.github.jklingsporn</groupId>
         <artifactId>vertx-jooq-generate</artifactId>
-        <version>4.1.0</version>
+        <version>5.1.1</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.jklingsporn</groupId>
+        <artifactId>vertx-jooq-shared</artifactId>
+        <version>5.1.1</version>
     </dependency>
   </dependencies>
 
