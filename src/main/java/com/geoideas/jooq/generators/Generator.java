@@ -1,14 +1,13 @@
 package com.geoideas.jooq.generators;
 
-import io.github.jklingsporn.vertx.jooq.generate.classic.ClassicReactiveVertxGenerator;
-
 import java.time.LocalDateTime;
 import org.jooq.codegen.JavaWriter;
 import org.jooq.meta.TypedElementDefinition;
 import com.geoideas.jooq.types.Geography;
+import io.github.jklingsporn.vertx.jooq.generate.classic.ClassicAsyncVertxGenerator;
 import io.vertx.core.json.JsonObject;
 
-public class Generator extends ClassicReactiveVertxGenerator {
+public class Generator extends ClassicAsyncVertxGenerator {
     private final String DATETYPE = "java.lang.LocalDate";
      @Override
     protected boolean handleCustomTypeFromJson(TypedElementDefinition<?> column, String setter, String columnType, String javaMemberName, JavaWriter out) {
